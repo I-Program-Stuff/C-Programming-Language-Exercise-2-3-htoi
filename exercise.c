@@ -13,7 +13,6 @@ int htoi(char s[]){
     int i,inc,res,v;
 	res = 0;
     for(i=strlen(s)-1,inc=1;(s[i] >= '0' && s[i] <= '9') || (s[i] >= 'A' && s[i] <= 'F');i--,inc*=16){
-        printf("%d\n",inc);
         if(s[i] >= '0' && s[i] <= '9'){
             v = (s[i] - '0') * inc;
 			res += v;
